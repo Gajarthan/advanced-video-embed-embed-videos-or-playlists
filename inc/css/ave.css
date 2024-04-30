@@ -1,0 +1,346 @@
+.ave_settings{
+  overflow:hidden;
+  background:#fff;
+  padding:10px;
+  max-width:700px;
+  width:100%;
+  box-shadow: 0 1px 2px #eee;
+}
+.ave_settings .title{
+  float:left;
+  width:100%;
+  box-sizing: border-box;
+  font-size:20px;
+  font-weight:bold;
+  padding:10px;
+  border-bottom: 1px solid #666;
+}
+.ave_settings .input_cont{
+  width:100%;
+  float:left;
+  box-sizing: border-box;
+  margin:10px 0;
+}
+.ave_settings .input_cont label{
+  font-size:14px;
+  float:left;
+  clear:both;
+  margin-bottom:5px;
+}
+.ave_settings .input_cont input{
+  padding:10px;
+  width:100%;
+  float:left;
+  box-sizing: border-box;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.2%;
+  background-size: cover !important;
+  border-radius:2px;
+  transition-duration: 0.3s;
+  position:relative;
+  overflow:hidden;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+	width: 100%;
+}
+.span_4_of_5 {
+	width: 79.76%;
+}
+.span_3_of_5 {
+	width: 59.52%;
+}
+.span_2_of_5 {
+	width: 39.28%;
+}
+.span_1_of_5 {
+	width: 270px;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+}
+.ave_search {
+  overflow: hidden;
+  background: #314D68;
+  margin: auto;
+  width: 99%;
+  box-sizing: border-box;
+}
+.ave_results {
+  border-top:solid 1px #eee;
+  margin-top:20px;
+  float:left;
+  overflow:hidden;
+  margin: auto;
+  width:99%;
+  padding:10px;
+  box-sizing: border-box;
+  display:none;
+}
+.col .title{
+  padding: 10px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.col img{
+  width:100%;
+}
+
+.col .open_pop{
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.8);
+  transition-duration:0.3s;
+}
+.col .open_pop button{
+  background-color: #fff;
+  border:none;
+}
+.col:hover .open_pop{
+  bottom:0;
+
+}
+.ave_search form{
+  float:left;
+  width:100%;
+  box-sizing: border-box;
+  padding:10px;
+}
+.ave_search form .input_in{
+  float:left;
+  margin:5px;
+  width:32%;
+}
+.ave_search form button{
+background-color: #fff !important;
+border:none !important;
+}
+#results_loading{
+  width: 30px;
+  margin-left: 20px;
+  display:none;
+}
+.ave_search form label{
+  font-size:14px;
+  float:left;
+  clear: both;
+  color:#fff;
+  margin:5px;
+}
+.ave_search form input,.ave_search form select{
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 2px #E2E2E2;
+}
+.ave_search form select {
+  height: 43px;
+}
+.ave_search form button{
+  clear:both;
+  float:left;
+  background-color: #fff;
+  border: none;
+  padding:7px 15px;
+}
+
+
+.popup_ave{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:999;
+  display:none;
+  z-index: 99999;
+  overflow:auto;
+}
+.popup_ave .overlay{
+  background:rgba(0,0,0,0.5);
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.popup_ave .modal_ave_container{
+  width:100%;
+  float:left;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.popup_ave .modal_ave_container .modal{
+  background:#fff;
+  width:100%;
+  max-width:1000px;
+  margin:30px auto;
+  overflow:hidden;
+}
+.popup_ave .modal_ave_container .modal .modal_header{
+  float:left;
+  width:100%;
+  padding:10px;
+  border-bottom:solid 1px #eee;
+  box-sizing: border-box;
+}
+.popup_ave .modal_ave_container .modal .modal_header .title{
+  font-size:14px;
+  float:left;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space: nowrap;
+  color:#555;
+}
+.popup_ave .modal_ave_container .modal .modal_header a{
+  float:right;
+}
+.popup_ave .modal_ave_container .modal .modal_content{
+  padding:10px;
+  float:left;
+  width:100%;
+  box-sizing: border-box;
+}
+.popup_ave .modal_ave_container .modal .modal_content .video_prev{
+  float:left;
+  margin-right:10px;
+}
+.popup_ave .modal_ave_container .modal .modal_content .details{
+  float:right;
+  width:40%;
+}
+.popup_ave .modal_ave_container .modal .modal_content .details .mini_inputs{
+  float: left;
+  width: 100%;
+  margin: 5px;
+}
+.popup_ave .modal_ave_container .modal .modal_content .details .form_ave_shortcode .title{
+  font-size:16px;
+  font-weight:bold;
+  color:#555;
+}
+.popup_ave .modal_ave_container .modal .modal_content .details .form_ave_shortcode .mini_inputs label{
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: solid 1px #ccc;
+  width: 100%;
+  color:#333;
+  margin: 5px 0;
+}
+.popup_ave .modal_ave_container .modal .modal_content .details .form_ave_shortcode .mini_inputs select , .popup_ave .modal_ave_container .modal .modal_content .details .form_ave_shortcode .mini_inputs input{
+  width: 100%;
+  box-sizing: border-box;
+}
+.shortcode_input{
+  float:left;
+  width:100%;
+}
+.shortcode_input input {
+  width: 100%;
+  padding: 10px;
+}
+.playlist_container{
+  position:fixed;
+  width:100%;
+  z-index:9999;
+  left:0;
+  bottom:0;
+  background:#fff;
+  box-shadow: 0 0 5px #ccc;
+}
+.playlist_container .header_block{
+  float:left;
+  width:100%;
+  box-sizing:border-box;
+  padding:10px;
+  border-bottom:solid 1px #eee;
+}
+.playlist_container .header_block .tag_short{
+  font-size:14px;
+  float:left;
+  color:#555;
+  line-height:1;
+  margin-right:10px;
+}
+.playlist_container .header_block .count_videos{
+  font-size:14px;
+  float:right;
+  color:#555;
+  line-height:1;
+  margin-right:10px;
+  line-height: 2;
+}
+.playlist_container .header_block input{
+  float:left;
+  width:300px;
+}
+
+.playlist_container .header_block button {
+  float:right;
+  font-weight:bold;
+  font-size:14px;
+  background-color: #fff;
+  border:none;
+}
+.playlist_container .grid_container {
+  float:left;
+  padding:5px;
+  width:100%;
+  background-color: #314D68;
+  box-sizing: border-box;
+}
+.playlist_container .grid_container .col{
+  width:164px !important;
+  height:162px !important;
+}
+@media only screen and (max-width:837px){
+  .ave_search form .input_in{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:1358px){
+  .span_1_of_5 {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width:625px){
+  .span_1_of_5 {
+    width: 100%;
+  }
+}
